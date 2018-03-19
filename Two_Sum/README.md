@@ -14,5 +14,6 @@ Given nums = [2, 7, 11, 15], target = 9,
 ## Explanantion
 The goal of this problem is to find the two numbers that add up to a specific target.
 <br />There are two different ways to think about it.
-<br />The first one would be basically find the two numbers in the array that add up to the target
-<br />The second one is that we can find the complement of the current number and see if the complement exists in the array that is given
+<br />The first one is that we can find the complement(target-current_number) of the current number and see if the complement exists in the array that is given.
+<br />The second one would be basically find the two numbers in the array that add up to the target by traversing each number in the array
+
