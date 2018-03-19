@@ -17,7 +17,7 @@ The goal of this problem is to find the two numbers that add up to a specific ta
 <br />There are **two different ways** to think about it.
 <br />
 ### Method 1
-<br />The first one is that we can loop through each number in the array and find the complement(target-current_number) of the current number then check if the complement exists in the array that is given.
+<br />The first one is that we can loop through each number in the array and find the complement(target-current_number) of the current number then check if the complement exists in the array that is given. Checking if the complement exists in the given array is a major factor that affects the time complexity. A simple but efficient solution is to store the number and its index into a dictionary. 
 
 ### Method 2
 <br />The second one would be basically find the two numbers in the array that add up to the target by traversing each number in the array
