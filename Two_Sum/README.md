@@ -33,5 +33,7 @@ The goal of this problem is to find the two numbers that add up to a specific ta
 <br />When thinking in this way, we need to add the two numbers in an efficient way to speed up our process. **Sorting the given array and use pointers will be a better alternative**. Using one pointer points to the beginning of the array and one pointer points to the end of the array can reduce the trying(add two numbers that are pointed by the pointers)to half of the array. However, in order to make it work, we need to sort the array first. 
 <br />
 <br />Since in a sorted array of number, we do not need to try all possible combinations of adding two number. We can increment the pointer to try add another number wisely by the sum of the current number. If the current two numbers add up larger than the target then we increment the right pointer and vice versa.
+<br />
+<br />Thus the time complexity will be O(nlogn + n/2) since the lower bound (best possible sorting algorithm) sorting takes O(nlogn) and two pointers traverse the array takes O(n/2)
 
 
