@@ -22,5 +22,6 @@ The goal of this problem is to find the two numbers that add up to a specific ta
 <br />The time complexity for this method will be **O(n)**, n as the size of the given array, since we just need one scan of the array and each number only take **O(1)** to perform the check.
 
 ### Method 2
-<br />The second one would be basically find the two numbers in the array that add up to the target by traversing each number in the array
+<br />The second one would be basically find the two numbers in the array that add up to the target by traversing each number in the array and another number in the array to see if sum up to the target value.
+<br />
 
