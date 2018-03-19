@@ -21,7 +21,9 @@ The goal of this problem is to find the two numbers that add up to a specific ta
 <br />
 <br />**Checking if the complement exists in the given array is a major factor that determines the time complexity**. We would like to reduce the time it takes to perform such check operations. A simple but efficient solution is to store the number as key and its index as value into a **dictionary**. Since the data is stored in a dictionary structure, **retrieve/check if a key exists in the dictionary takes only O(1) constant time**. 
 <br />
-<br />Since complement comes in pair(If two nums in the array add up to the target, they must be complement to each other so as long as one of the complement is in the dictionary, scanning array once will guarantee that we will find them no matter in what condition) we can store num and its index into dictionary while checking if its complement exists in the dictionary. This will only result one traverse of the given array. To further optimize it in python(use less operations), we can use  *enumerate()* function which adds a counter to an iterable type.http://docs.python.org/2/library/functions.html#enumerate 
+<br />Since complement comes in pair(If two nums in the array add up to the target, they must be complement to each other so as long as one of the complement is in the dictionary, scanning array once will guarantee that we will find them no matter in what condition) we can store num and its index into dictionary while checking if its complement exists in the dictionary. This will only result one traverse of the given array. 
+<br />
+<br />To further optimize it in python(use less operations), we can use  *enumerate()* function which adds a counter to an iterable type.http://docs.python.org/2/library/functions.html#enumerate 
 <br />
 <br />The time complexity for this method will be **O(n)**, n as the size of the given array, since we just need one scan of the array and each number only take **O(1)** to perform the check.
 
