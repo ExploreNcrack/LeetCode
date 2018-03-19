@@ -1,4 +1,6 @@
 def twoSum(nums, target):
+    'solution1'
+
     """
     :type nums: List[int]
     :type target: int
@@ -12,9 +14,8 @@ def twoSum(nums, target):
 
 
 
-
 test = [3 ,1 ,8 ,9 ,11]
-target = 17
+target = 22
 output = twoSum(test, target)
 
 print(test)
