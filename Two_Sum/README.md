@@ -34,6 +34,6 @@ The goal of this problem is to find the two numbers that add up to a specific ta
 <br />
 <br />Since in a sorted array of number, we do not need to try all possible combinations of adding two number. We can increment the pointer to try add another number wisely by the sum of the current number. If the current two numbers add up larger than the target then we increment the right pointer and vice versa.
 <br />
-<br />Thus the time complexity will be **O(nlogn + n/2)** since the lower bound (best possible sorting algorithm) sorting takes O(nlogn) and two pointers traverse the array takes **O(n/2)**
+<br />Thus the time complexity will be **O(nlogn + n/2)** since the lower bound (best possible sorting algorithm) sorting takes **O(nlogn)** and two pointers traverse the array takes **O(n/2)**
 
 
