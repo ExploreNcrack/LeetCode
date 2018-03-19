@@ -15,7 +15,7 @@ def twoSum(nums, target):
 
 
 test = [3 ,1 ,8 ,9 ,11]
-target = 22
+target = 17
 output = twoSum(test, target)
 
 print(test)

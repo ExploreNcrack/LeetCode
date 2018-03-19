@@ -7,8 +7,8 @@ def twoSum(nums, target):
     :rtype: List[int]
     """
     
-    num = nums
-    nums = [[num[i], i] for i in range(len(num))]
+   
+    nums = [[num, i] for i,num in enumerate(nums)]
        
     nums.sort()
     sum = 0
@@ -25,7 +25,7 @@ def twoSum(nums, target):
             return [nums[i][1], nums[j][1]]
 
 test = [3 ,1 ,8 ,9 ,11]
-target = 22
+target = 20
 output = twoSum(test, target)
 
 print(test)
