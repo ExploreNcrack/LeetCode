@@ -6,3 +6,9 @@ You may assume that each input would have exactly one solution, and you may not 
 **Link**: https://leetcode.com/problems/two-sum/description/
 
 
+## Example
+Given nums = [2, 7, 11, 15], target = 9,
+<br />Because nums[0] + nums[1] = 2 + 7 = 9,
+<br />return [0, 1].
+
+
