@@ -16,7 +16,7 @@ The goal of this problem is to find the two numbers that add up to a specific ta
 <br />
 <br />There are **two different ways** to think about it.
 <br />
-### Method 1
+### Solution 1
 <br />The first one is that we can loop through each number in the array and **find the complement(target-current_number) of the current number then check if the complement exists in the array that is given**. 
 <br />
 <br />**Checking if the complement exists in the given array is a major factor that determines the time complexity**. We would like to reduce the time it takes to perform such check operations. A simple but efficient solution is to store the number as key and its index as value into a **dictionary**. Since the data is stored in a dictionary structure, **retrieve/check if a key exists in the dictionary takes only O(1) constant time**. 
@@ -27,13 +27,13 @@ The goal of this problem is to find the two numbers that add up to a specific ta
 <br />
 <br />The time complexity for this method will be **O(n)**, n as the size of the given array, since we just need one scan of the array and each number only take **O(1)** to perform the check.
 
-### Method 2
+### Solution 2
 <br />The second one would be basically find the two numbers in the array that add up to the target by traversing each number in the array and another number in the array to see if sum up to the target value.
 <br />
 <br />When thinking in this way, we need to add the two numbers in an efficient way to speed up our process. **Sorting the given array and use pointers will be a better alternative**. Using one pointer points to the beginning of the array and one pointer points to the end of the array can reduce the trying(add two numbers that are pointed by the pointers)to half of the array. However, in order to make it work, we need to sort the array first. 
 <br />
 <br />Since in a sorted array of number, we do not need to try all possible combinations of adding two number. We can increment the pointer to try add another number wisely by the sum of the current number. If the current two numbers add up larger than the target then we increment the right pointer and vice versa.
 <br />
-<br />Thus the time complexity will be O(nlogn + n/2) since the lower bound (best possible sorting algorithm) sorting takes O(nlogn) and two pointers traverse the array takes O(n/2)
+<br />Thus the time complexity will be **O(nlogn + n/2)** since the lower bound (best possible sorting algorithm) sorting takes **O(nlogn)** and two pointers traverse the array takes **O(n/2)**
 
 
